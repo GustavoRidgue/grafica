@@ -1,0 +1,10 @@
+.bg-whatsapp {
+    background-color: #23bd38;
+    border: #23bd38;
+    color: white;
+}
+
+.bg-whatsapp:hover {
+    background-color: #0c9e21;
+    border: #0c9e21;
+}
