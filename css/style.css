@@ -1,10 +1,220 @@
-.bg-whatsapp {
+body {
+    overflow-x: hidden;
+}
+
+.bg-img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    filter: brightness(0.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.bg-transparente {
+    background-color: transparent;
+    color: black;
+}
+
+#sobre-nos {
+    margin: 3rem 3rem 12rem 3rem;
+}
+
+#sobre-nos .img {
+    float: right;
+}
+
+.btn-whatsapp {
     background-color: #23bd38;
     border: #23bd38;
     color: white;
 }
 
-.bg-whatsapp:hover {
+.btn-whatsapp:hover {
     background-color: #0c9e21;
     border: #0c9e21;
+    color: white;
+}
+
+.width-auto {
+    width: auto;
+}
+
+/* xs */
+@media (max-width: 575px) {
+    p, .fs-5 {
+        font-size: 1.09rem!important;
+    }
+    #sobre-nos, #sobre-nos .container-fluid {
+        padding: 0!important;
+    }
+
+    .col-xs-12 {
+        padding: 0.5rem 0 0.5rem 0!important;
+    }
+
+    #novo {
+        padding: 2rem!important;
+    }
+    }
+
+    #localizacao {
+        margin: 2rem!important;
+    }
+
+    #sobre-nos .img {
+        float: none;
+        width: 90%;
+        height: auto;
+        text-align: center;
+    }
+
+    #sobre-nos .row {
+        text-align: center!important;
+    }
+
+    #servicos {
+        margin: 0 0 0 0!important;
+    }
+
+    #servicos .p-4 {
+        padding: 1rem 0 1rem 0!important;
+
+    }
+
+    .vw-xs-100 {
+        width: 100%;
+    }
+
+/* xs */
+@media (max-width: 575px) {
+    .vw-xs-100 {
+        width: 100vw;
+    }
+
+    .col-sm-12 {
+        padding: 0!important;
+    }
+
+    #sobre-nos .img {
+        float: none;
+        width: 90%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 2.5rem!important;
+    }
+
+    #sobre-nos .row {
+        text-align: center!important;
+    }
+
+    #localizacao {
+        margin-right: 0!important;
+        margin-left: 0!important;
+    }
+}
+/* sm */
+@media (min-width: 576px) and (max-width: 767px) {
+    .col-sm-12 {
+        padding: 0!important;
+    }
+
+    #sobre-nos .img {
+        float: none;
+        width: 70%;
+        height: auto;
+        margin-bottom: 2.5rem!important;
+    }
+
+    #sobre-nos .row {
+        text-align: center!important;
+    }
+}
+/* md */
+@media (min-width: 768px) and (max-width: 991px) {
+    .bg-img {
+        height: 90vh;
+    }
+
+    #sobre-nos {
+        margin: 3rem 7rem 12rem 7rem;
+    }
+
+    #sobre-nos .img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* lg */
+@media (min-width: 992px) and (max-width: 1199px) {
+    #sobre-nos {
+        margin: 3rem 10rem 12rem 10rem;
+    }
+
+    .bg-img {
+        height: 80vh;
+    }
+
+    #sobre-nos .img {
+        width: 80%;
+        height: auto;
+    }
+}
+/* xl */
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .bg-img {
+        height: 70vh;
+    }
+
+    #sobre-nos {
+        margin: 3rem 13rem 12rem 13rem;
+    }
+}
+/* xxl */
+@media (min-width: 1400px) {
+    .bg-img {
+        height: 60vh;
+    }
+}
+
+.copy-text {
+    transition: all 0.2s ease-in-out;
+}
+
+.copied-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in-out;
+}
+.copy-text {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+    
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: unset!important;
+  bottom: 0;
+  z-index: 1030;
+}
+
+#msg-copiado {
+    transition: opacity 0.3s ease-in-out;
 }
