@@ -79,11 +79,6 @@ body {
         margin: 0 0 0 0!important;
     }
 
-    #servicos .p-4 {
-        padding: 1rem 0 1rem 0!important;
-
-    }
-
     .vw-xs-100 {
         width: 100%;
     }
@@ -92,10 +87,6 @@ body {
 @media (max-width: 575px) {
     .vw-xs-100 {
         width: 100vw;
-    }
-
-    .col-sm-12 {
-        padding: 0!important;
     }
 
     #sobre-nos .img {
@@ -117,10 +108,6 @@ body {
 }
 /* sm */
 @media (min-width: 576px) and (max-width: 767px) {
-    .col-sm-12 {
-        padding: 0!important;
-    }
-
     #sobre-nos .img {
         float: none;
         width: 70%;
