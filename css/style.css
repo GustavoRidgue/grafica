@@ -42,6 +42,29 @@ body {
     width: auto;
 }
 
+#localizacao {
+    margin: 2rem!important;
+}
+
+#sobre-nos .img {
+    float: none;
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+
+#sobre-nos .row {
+    text-align: center!important;
+}
+
+#servicos {
+    margin: 0 0 0 0!important;
+}
+
+.vw-xs-100 {
+    width: 100%;
+}
+
 /* xs */
 @media (max-width: 575px) {
     p, .fs-5 {
@@ -57,53 +80,6 @@ body {
 
     #novo {
         padding: 2rem!important;
-    }
-    }
-
-    #localizacao {
-        margin: 2rem!important;
-    }
-
-    #sobre-nos .img {
-        float: none;
-        width: 90%;
-        height: auto;
-        text-align: center;
-    }
-
-    #sobre-nos .row {
-        text-align: center!important;
-    }
-
-    #servicos {
-        margin: 0 0 0 0!important;
-    }
-
-    .vw-xs-100 {
-        width: 100%;
-    }
-
-/* xs */
-@media (max-width: 575px) {
-    .vw-xs-100 {
-        width: 100vw;
-    }
-
-    #sobre-nos .img {
-        float: none;
-        width: 90%;
-        height: auto;
-        text-align: center;
-        margin-bottom: 2.5rem!important;
-    }
-
-    #sobre-nos .row {
-        text-align: center!important;
-    }
-
-    #localizacao {
-        margin-right: 0!important;
-        margin-left: 0!important;
     }
 }
 /* sm */
