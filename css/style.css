@@ -42,10 +42,6 @@ body {
     width: auto;
 }
 
-#localizacao {
-    margin: 2rem!important;
-}
-
 #sobre-nos .img {
     float: none;
     width: 90%;
@@ -58,11 +54,7 @@ body {
 }
 
 #servicos {
-    margin: 0 0 0 0!important;
-}
-
-.vw-xs-100 {
-    width: 100%;
+    margin: 0!important;
 }
 
 /* xs */
@@ -81,6 +73,10 @@ body {
     #novo {
         padding: 2rem!important;
     }
+
+    /* #localizacao .col-xs-12 {
+        padding: 0;
+    } */
 }
 /* sm */
 @media (min-width: 576px) and (max-width: 767px) {
