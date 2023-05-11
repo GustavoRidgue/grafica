@@ -57,6 +57,16 @@ body {
     margin: 0!important;
 }
 
+.border-top {
+    border-top: 1px solid #495057!important;
+}
+
+.logo-footer {
+    height: auto;
+    width: 75%;
+    max-width: 350px;
+}
+
 /* xs */
 @media (max-width: 575px) {
     p, .fs-5 {
@@ -67,11 +77,15 @@ body {
     }
 
     .col-xs-12 {
-        padding: 0.5rem 0 0.5rem 0!important;
+        padding: 0.5rem 0 0.5rem 0;
     }
 
     #novo {
         padding: 2rem!important;
+    }
+
+    .text-xs-center {
+        text-align: center;
     }
 
     /* #localizacao .col-xs-12 {
