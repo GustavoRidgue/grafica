@@ -1,5 +1,9 @@
-body {
-    overflow-x: hidden;
+.navbar {
+    background-color: transparent !important;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
 }
 
 .banner {
@@ -9,14 +13,6 @@ body {
     background-position: center;
     position: relative;
     /* filter: brightness(50%) */
-}
-
-.navbar {
-    background-color: transparent !important;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 100;
 }
 
 .banner-text {
@@ -29,9 +25,8 @@ body {
     color: #fff;
 }
 
-.bg-transparente {
-    background-color: transparent;
-    color: black;
+body {
+    overflow-x: hidden;
 }
 
 .btn-whatsapp {
@@ -46,21 +41,6 @@ body {
     color: white;
 }
 
-.width-auto {
-    width: auto;
-}
-
-.border-top {
-    border-top: 1px solid #495057!important;
-}
-
-.logo-footer {
-    height: auto;
-    width: 75%;
-    max-width: 350px;
-}
-
-
 .copy-text {
     transition: all 0.2s ease-in-out;
 }
@@ -72,9 +52,22 @@ body {
     transform: translate(-50%, -50%);
     transition: all 0.2s ease-in-out;
 }
+
+#msg-copiado {
+    transition: opacity 0.3s ease-in-out;
+}
+
 .copy-text {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+}
+
+.fixed-bottom {
+  position: fixed;
+  right: 0;
+  left: unset!important;
+  bottom: 0;
+  z-index: 1030;
 }
     
 @keyframes pulse {
@@ -89,16 +82,10 @@ body {
     }
 }
 
-.fixed-bottom {
-  position: fixed;
-  right: 0;
-  left: unset!important;
-  bottom: 0;
-  z-index: 1030;
-}
-
-#msg-copiado {
-    transition: opacity 0.3s ease-in-out;
+.logo-footer {
+    height: auto;
+    width: 75%;
+    max-width: 350px;
 }
 
 /* xs */
@@ -118,6 +105,10 @@ body {
     .text-xs-center {
         text-align: center;
     }
+
+    .servicos-descricao {
+        margin: 0.5rem!important;
+    }
 }
 
 /* sm */
@@ -125,29 +116,17 @@ body {
 } */
 
 /* md */
-@media (min-width: 768px) and (max-width: 991px) {
-    .bg-img {
-        height: 90vh;
-    }
-}
+/* @media (min-width: 768px) and (max-width: 991px) {
+} */
 
 /* lg */
-@media (min-width: 992px) and (max-width: 1199px) {
-    .bg-img {
-        height: 80vh;
-    }
-}
+/* @media (min-width: 992px) and (max-width: 1199px) {
+} */
 
 /* xl */
-@media (min-width: 1200px) and (max-width: 1399px) {
-    .bg-img {
-        height: 70vh;
-    }
+/*@media (min-width: 1200px) and (max-width: 1399px) {
 }
 
 /* xxl */
-@media (min-width: 1400px) {
-    .bg-img {
-        height: 60vh;
-    }
-}
+/*@media (min-width: 1400px) {
+} */
